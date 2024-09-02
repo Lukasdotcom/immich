@@ -60,6 +60,7 @@ export interface MapSettings {
   relativeDate: string;
   dateAfter: string;
   dateBefore: string;
+  includeTimeline: boolean;
 }
 
 export const mapSettings = persisted<MapSettings>('map-settings', {
@@ -71,6 +72,7 @@ export const mapSettings = persisted<MapSettings>('map-settings', {
   relativeDate: '',
   dateAfter: '',
   dateBefore: '',
+  includeTimeline: true,
 });
 
 export const videoViewerVolume = persisted<number>('video-viewer-volume', 1, {});

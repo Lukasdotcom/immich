@@ -33,6 +33,7 @@
     <SettingSwitch title={$t('include_archived')} bind:checked={settings.includeArchived} />
     <SettingSwitch title={$t('include_shared_partner_assets')} bind:checked={settings.withPartners} />
     <SettingSwitch title={$t('include_shared_albums')} bind:checked={settings.withSharedAlbums} />
+    <SettingSwitch title={$t('include_timeline')} bind:checked={settings.includeTimeline} />
     {#if customDateRange}
       <div in:fly={{ y: 10, duration: 200 }} class="flex flex-col gap-4">
         <div class="flex items-center justify-between gap-8">
